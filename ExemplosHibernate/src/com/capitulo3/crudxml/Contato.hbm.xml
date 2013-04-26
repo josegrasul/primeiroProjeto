@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD //EN"
+  "http://www.hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+  <hibernate-mapping package="com.capitulo3.crudxml">
+  <class name="Contato" table="contato">
+  	<id name="codigo" column="codigo">
+  		<generator class="increment"/>
+  	</id>
+  	
+  	 <property name="nome"/>
+  	  <property name="telefone"/>
+  	   <property name="email"/>
+  	    <property name="Datacadastro" type="date" column="dt_cad"/>
+  		<property name="observacao" type="string" column="obs"/>
+  		</class>
+  </hibernate-mapping>
